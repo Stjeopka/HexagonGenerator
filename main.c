@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define ANZAHL 3
+#define ANZAHL 10
 #define BACKGROUND 255 //Backgroundcolor: 0 for Black and 255 for White
-#define MYFILENAME "testimage.ppm" // Ihr Filename
 #define X_PIXEL 2000 // Ihre Bildbreite
 #define Y_PIXEL 2000 // Ihre Bildhöhe
+#define MYFILENAME "testimage.ppm" // Ihr Filename
 int cor[X_PIXEL][Y_PIXEL];
 
 
@@ -31,66 +31,47 @@ int drawline(int A[], int B[]){
     int Start_Y=A[1];
     int End_X=B[0];
     int End_Y=B[1];
-    //int mirror_H=1;
-    //int mirror_45=0;
-    /*
-    //Swap the Start and the End
-    if(End_X < Start_X){
-        int tmp_X=Start_X;
-        int tmp_Y=Start_Y;
-        int Start_X = End_X;
-        int Start_Y = End_Y;
-        int End_X = tmp_X;
-        int End_Y = tmp_Y;
-    }
+    int lineColor = (BACKGROUND == 255) ? 0 : 255;
 
-    //Check if the line goes down. If true mirror the Y coordinate.
-    if(End_Y > Start_Y){
-        mirror_H=-1;
-        Start_Y = Start_Y*mirror_H;
-        End_Y = End_Y*mirror_H;
-    }
-
-    //Check if the line goes over a 45 degree angle
-    if((End_X - Start_X) < (Start_Y - End_Y)){
-        int mirror_45 =1;
-
-        //Swap Start X and Y
-        int tmp_Start = Start_X;
-        Start_X = Start_Y;
-        Start_Y = Start_X;
-
-        //Swap End X and Y
-        int tmp_End = End_X;
-        End_X = End_Y;
-        End_Y = End_X;
-    }*/
-
-    int dx =  abs(End_X - Start_X), sx = Start_X < End_X ? 1 : -1;
-    int dy = -abs(End_Y - Start_Y), sy = Start_Y < End_Y ? 1 : -1;
-    int err = dx + dy, e2; /* error value e_xy */
+    int dx =  abs(End_X - Start_X);
+    int sx = Start_X < End_X ? 1 : -1;
+    int dy = -abs(End_Y - Start_Y);
+    int sy = Start_Y < End_Y ? 1 : -1;
+    int err = dx + dy; /* error value e_xy */
+    int e2;
 
     while (1) {
-        cor[Start_X][Start_Y]=0;
+        cor[Start_X][Start_Y]=lineColor;
         if (Start_X == End_X && Start_Y == End_Y) break;
         e2 = 2 * err;
-        if (e2 > dy) { err += dy; Start_X += sx; } /* e_xy+e_x > 0 */
-        if (e2 < dx) { err += dx; Start_Y += sy; } /* e_xy+e_y < 0 */
+        if (e2 > dy){ /* e_xy+e_x > 0 */
+            err += dy;
+            Start_X += sx;
+        }
+        if(e2 < dx){ /* e_xy+e_y < 0 */
+            err += dx;
+            Start_Y += sy;
+        }
     }
 
 }
 
 
-void draw(int middle[], int n, int l){
+void draw(int middle[], int count){
     drawpoint(middle);
+    int maxsize = (X_PIXEL <= Y_PIXEL) ? X_PIXEL :Y_PIXEL;
+    maxsize = maxsize/2* 0.98;
+    int dist = maxsize/count;
+    dist >= 150 ? 150 : dist;
+    dist <= 50 ? 50 : dist;
     //Will set every corner piece
-    for (int i=1; i<=n; i++){
-        int UpperPoint[] = {middle[0], middle[1]- (i*l)};
-        int UpperRightPoint[] = {middle[0]+ (i*l), middle[1]- (i*(l/2))};
-        int UpperLeftPoint[] = {middle[0] - (i*l), middle[1]- (i*(l/2))};
-        int LowerPoint[] = {middle[0], middle[1]+ (i*l)};
-        int LowerRightPoint[] = {middle[0] + (i*l), middle[1]+ (i*(l/2))};
-        int LowerLeftPoint[] = {middle[0] - (i*l), middle[1]+ (i*(l/2))};
+    for (int i=1; i<=count; i++){
+        int UpperPoint[] = {middle[0], middle[1]- (i*dist)};
+        int UpperRightPoint[] = {middle[0]+ (i*dist), middle[1]- (i*(dist/2))};
+        int UpperLeftPoint[] = {middle[0] - (i*dist), middle[1]- (i*(dist/2))};
+        int LowerPoint[] = {middle[0], middle[1]+ (i*dist)};
+        int LowerRightPoint[] = {middle[0] + (i*dist), middle[1]+ (i*(dist/2))};
+        int LowerLeftPoint[] = {middle[0] - (i*dist), middle[1]+ (i*(dist/2))};
 
         drawline(UpperPoint,UpperRightPoint);
         drawline(UpperRightPoint,LowerRightPoint);
@@ -99,9 +80,9 @@ void draw(int middle[], int n, int l){
         drawline(LowerLeftPoint,UpperLeftPoint);
         drawline(UpperLeftPoint,UpperPoint);
     }
-    int MaxUpperRightPoint[] = {middle[0]+ (n*l), middle[1]- (n*(l/2))};
-    int MaxUpperLeftPoint[] = {middle[0] - (n*l), middle[1]- (n*(l/2))};
-    int MaxLowerPoint[] = {middle[0], middle[1]+ (n*l)};
+    int MaxUpperRightPoint[] = {middle[0]+ (count*dist), middle[1]- (count*(dist/2))};
+    int MaxUpperLeftPoint[] = {middle[0] - (count*dist), middle[1]- (count*(dist/2))};
+    int MaxLowerPoint[] = {middle[0], middle[1]+ (count*dist)};
 
     drawline(middle,MaxUpperRightPoint);
     drawline(middle,MaxUpperLeftPoint);
@@ -127,11 +108,9 @@ void create_ppm(){
 
 int main(){
     int middle[2];//middle[0] = X Coordinate //middle[1] = Y Coordinate
-    int n = 7;//n how many hexagons
-    int l = 129;//l distance between the corner and the middle
     setbackground();
     findcenter(middle);
-    draw(middle, n, l);
+    draw(middle, ANZAHL);
     create_ppm();
     return 0;
 }
