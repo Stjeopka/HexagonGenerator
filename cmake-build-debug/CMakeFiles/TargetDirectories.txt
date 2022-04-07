@@ -1,0 +1,3 @@
+C:/Projects/C/Programmenwurf/cmake-build-debug/CMakeFiles/Programmenwurf.dir
+C:/Projects/C/Programmenwurf/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Projects/C/Programmenwurf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
