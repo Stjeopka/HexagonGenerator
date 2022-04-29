@@ -3,4 +3,4 @@ project(Programmenwurf C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Programmenwurf main.c)
+add_executable(Programmenwurf main.c functions.c functions.h)
