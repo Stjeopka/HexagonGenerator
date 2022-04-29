@@ -1,9 +1,21 @@
 #ifndef PROGRAMMENWURF_FUNCTIONS_H
 #define PROGRAMMENWURF_FUNCTIONS_H
+
+//Settings
+#define MYFILENAME "testimage.ppm" // Your Filename
+#define X_PIXEL 2000 //Width of the Image
+#define Y_PIXEL 2000 //Height of the Image
+#define BACKGROUND 255 //Backgroundcolor
+#define LINECOLOR 0 //Linecolor
+
 #include <stdio.h>
 #include <stdlib.h>
-extern int lineColor;
-extern int cor[2000][2000];
+
+extern int cor[X_PIXEL][Y_PIXEL];
+
+void create_ppm();
+void setbackground();
+void findcenter(int middle[]);
 void drawline(int A[], int B[]);
-void drawpoint(int A[]);
+
 #endif //PROGRAMMENWURF_FUNCTIONS_H
