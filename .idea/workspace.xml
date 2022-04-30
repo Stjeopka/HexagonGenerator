@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Programmenwurf" targetName="Programmenwurf" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a716bbb-5ffe-4fc0-8512-db2d9abf37ac" name="Changes" comment="Documentation reworked" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2021" />
+    <option name="minorVersion" value="3.3" />
+  </component>
+  <component name="ProjectId" id="27NP9mRK4jXnJIlcxE97fQEKphi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="kite.configurable" />
+  </component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="main" />
+    </force-push-targets>
+  </component>
+  <component name="RunManager">
+    <configuration name="Programmenwurf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Programmenwurf" TARGET_NAME="Programmenwurf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Programmenwurf" RUN_TARGET_NAME="Programmenwurf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a716bbb-5ffe-4fc0-8512-db2d9abf37ac" name="Changes" comment="" />
+      <created>1649157422703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649157422703</updated>
+      <workItem from="1649157424666" duration="5183000" />
+      <workItem from="1649227890837" duration="707000" />
+      <workItem from="1649228621977" duration="4775000" />
+      <workItem from="1649236506142" duration="3390000" />
+      <workItem from="1649243158906" duration="1577000" />
+      <workItem from="1649247016050" duration="7997000" />
+      <workItem from="1649331752003" duration="1401000" />
+      <workItem from="1649334523877" duration="3322000" />
+      <workItem from="1650550570597" duration="1562000" />
+      <workItem from="1650609760292" duration="742000" />
+      <workItem from="1650952804281" duration="4974000" />
+      <workItem from="1651156066178" duration="1409000" />
+      <workItem from="1651157510394" duration="21000" />
+      <workItem from="1651219943802" duration="6179000" />
+      <workItem from="1651226206466" duration="7079000" />
+      <workItem from="1651237745444" duration="2192000" />
+      <workItem from="1651337956316" duration="2000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1649332115611</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649332115611</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ignores now the cmake-build-debug folder">
+      <created>1649332487481</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649332487481</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Ignores now the cmake-build-debug folder">
+      <created>1649332633519</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649332633519</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Ignores now the cmake-build-debug folder">
+      <created>1649332834972</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649332834972</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ignores now the cmake-build-debug folder">
+      <created>1649332951956</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649332951956</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Ignores now the cmake-build-debug folder">
+      <created>1649333029082</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649333029082</updated>
+    </task>
+    <task id="LOCAL-00007" summary="The distance between the point now respects the image Size">
+      <created>1649337291061</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649337291061</updated>
+    </task>
+    <task id="LOCAL-00008" summary="No global values anymore">
+      <created>1650959435393</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650959435393</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Max Values put in">
+      <created>1650959782323</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1650959782323</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Canvas now a public variable">
+      <created>1651156501262</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651156501262</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Testing">
+      <created>1651157524007</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1651157524007</updated>
+    </task>
+    <task id="LOCAL-00012" summary="draw functions now in another file and 0 amount safe">
+      <created>1651233490101</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1651233490101</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Draw Class now implemented">
+      <created>1651236029488</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1651236029488</updated>
+    </task>
+    <task id="LOCAL-00014" summary="changed Names and updated README.md">
+      <created>1651237035559</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1651237035559</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Documentation reworked">
+      <created>1651240773298</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651240773298</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Ignores now the cmake-build-debug folder" />
+    <MESSAGE value="The distance between the point now respects the image Size" />
+    <MESSAGE value="No global values anymore" />
+    <MESSAGE value="Max Values put in" />
+    <MESSAGE value="Canvas now a public variable" />
+    <MESSAGE value="Testing" />
+    <MESSAGE value="draw functions now in another file and 0 amount safe" />
+    <MESSAGE value="Draw Class now implemented" />
+    <MESSAGE value="changed Names and updated README.md" />
+    <MESSAGE value="Documentation reworked" />
+    <option name="LAST_COMMIT_MESSAGE" value="Documentation reworked" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

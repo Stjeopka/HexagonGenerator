@@ -1,0 +1,18 @@
+# ninja log v5
+15	124	6729374730473449	CMakeFiles/Programmenwurf.dir/main.c.obj	46ebfd24879c306d
+140	271	6729374731892744	Programmenwurf.exe	5a7efa3ea120cd6a
+1	319	6729384912042588	build.ninja	ff53fb1aedb36002
+2	92	6729296375578332	CMakeFiles/Programmenwurf.dir/drawFunctions.c.obj	e4bbc76df8b4b238
+1	140	6729374730633044	CMakeFiles/Programmenwurf.dir/functions.c.obj	f0e24de354897979
+1	84	6729270239929186	CMakeFiles/Programmenwurf.dir/drawFuntions.c.obj	43b7d4a9ea59808c
+2	171	6729390332042067	CMakeFiles/Programmenwurf.dir/main.c.obj	46ebfd24879c306d
+25	179	6729390332121853	CMakeFiles/Programmenwurf.dir/draw.c.obj	2f29b0cd80535450
+20	183	6729390332161740	CMakeFiles/Programmenwurf.dir/functions.c.obj	f0e24de354897979
+183	395	6729390334263410	Programmenwurf.exe	b5076a5080b9f319
+49	419	6730411769970214	CMakeFiles/Programmenwurf.dir/draw.c.obj	2f29b0cd80535450
+3	420	6730411769970214	CMakeFiles/Programmenwurf.dir/functions.c.obj	f0e24de354897979
+421	1017	6730411775936005	Programmenwurf.exe	b5076a5080b9f319
+2	105	6730413472633349	CMakeFiles/Programmenwurf.dir/draw.c.obj	2f29b0cd80535450
+106	230	6730413473853258	Programmenwurf.exe	b5076a5080b9f319
+1	101	6730413792871893	CMakeFiles/Programmenwurf.dir/functions.c.obj	f0e24de354897979
+101	220	6730413794006798	Programmenwurf.exe	b5076a5080b9f319
